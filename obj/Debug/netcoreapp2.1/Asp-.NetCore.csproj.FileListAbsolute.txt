@@ -31,3 +31,4 @@ d:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Asp-.NetCore.dll
 d:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Asp-.NetCore.pdb
 D:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Asp-.NetCore.csproj.CopyComplete
 d:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Razor\Views\Escuela\Index.g.cshtml.cs
+d:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Simple.g.cshtml.cs
