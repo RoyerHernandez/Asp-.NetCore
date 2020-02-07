@@ -1,5 +1,5 @@
 {
-  "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Asp-.NetCore.csproj",
+  "FilePath": "d:\\platzi\\Asp_Net\\Asp-.NetCore\\Asp-.NetCore.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2814,7 +2814,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": "\n            <summary>\n            Specifies the path to the JavaScript module containing prerendering code.\n            </summary>\n        ",
+            "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "ModuleName"
