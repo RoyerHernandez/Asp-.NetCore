@@ -1,4 +1,5 @@
-﻿@model List<Asignatura>
+﻿
+@model List<Asignatura>
 
 @{
     ViewData["Title"] = "Información Asignatura";
@@ -7,10 +8,8 @@
 
 <h1>@ViewData["Title"]</h1>
 
-@foreach (var asignatura in Model)
-{
-<partial name="AsignaturaSimple" model="asignatura"/>   
-}
+
+<partial name="ListaObjetoEscuela"/>   
 
 <p><i>@ViewBag.fecha</i></p>
 

@@ -33,5 +33,8 @@ D:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Asp-.NetCore.csproj.CopyC
 d:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Razor\Views\Escuela\Index.g.cshtml.cs
 d:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Simple.g.cshtml.cs
 D:\platzi\Asp_Net\Asp-.NetCore\obj\Debug\netcoreapp2.1\Razor\Views\Asignatura\Index.g.cshtml.cs
-d:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\AsignaturaSimple.g.cshtml.cs
 D:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Razor\Views\Asignatura\MultiAsignatura.g.cshtml.cs
+d:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\ObjetoEscuelaSimple.g.cshtml.cs
+d:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Razor\Views\Alumno\Index.g.cshtml.cs
+d:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Razor\Views\Alumno\MultiAlumno.g.cshtml.cs
+d:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\ListaObjetoEscuela.g.cshtml.cs
