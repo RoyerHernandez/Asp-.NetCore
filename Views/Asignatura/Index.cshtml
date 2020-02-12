@@ -6,6 +6,11 @@
 }
 
 <h1>@ViewData["Title"]</h1>
-<h2>Nombre : @Model.Nombre </h2>
+<strong>Desde la vista normal</strong>
+<p>Nombre : @Model.Nombre <br/>
+   Nombre : @Model.UniqueId </p>
+
+<strong>Desde la vista normal</strong>
+<partial name="AsignaturaSimple">
 <p><i>@ViewBag.fecha</i></p>
 
