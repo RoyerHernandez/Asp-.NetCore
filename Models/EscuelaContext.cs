@@ -15,6 +15,8 @@ namespace Asp_.NetCore.Models
 
         public DbSet<Curso> Cursos { get; set; }
 
+        public DbSet<Alumno> Alumnos {get; set;}
+
         public EscuelaContext(DbContextOptions<EscuelaContext> options) : base(options)
         {
            

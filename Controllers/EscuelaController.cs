@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 
 public class EscuelaController: Controller{
 
-    private EscuelaContext _context;
     public IActionResult index(){  
         
         ViewBag.cosaDinamica = "Bienvenidos";
@@ -17,6 +16,7 @@ public class EscuelaController: Controller{
         return View(escuela);
     }
 
+    private EscuelaContext _context;
     public EscuelaController(EscuelaContext context)
     {
         _context = context;
