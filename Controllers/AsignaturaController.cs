@@ -9,7 +9,7 @@ public class AsignaturaController: Controller{
     
     public IActionResult Index(){  
     
-    return View(new Asignatura{Nombre="Matemáticas", UniqueId= Guid.NewGuid().ToString()} );
+    return View(new Asignatura{Nombre="Matemáticas", Id= Guid.NewGuid().ToString()} );
     }
     
     
@@ -18,20 +18,20 @@ public class AsignaturaController: Controller{
        var listaAsignaturas = new List<Asignatura>(){
            
                             new Asignatura{Nombre="Matemáticas",
-                                UniqueId= Guid.NewGuid().ToString()
+                                Id= Guid.NewGuid().ToString()
                             } ,
                             new Asignatura{Nombre="Educación Física",
-                                UniqueId= Guid.NewGuid().ToString()
+                                Id= Guid.NewGuid().ToString()
                             },
                             new Asignatura{Nombre="Castellano",
-                                UniqueId= Guid.NewGuid().ToString()
+                                Id= Guid.NewGuid().ToString()
                             },
                             new Asignatura{Nombre="Ciencias Naturales",
-                                UniqueId= Guid.NewGuid().ToString()
+                                Id= Guid.NewGuid().ToString()
                             }
                             ,
                             new Asignatura{Nombre="Programación",
-                                UniqueId= Guid.NewGuid().ToString()
+                                Id= Guid.NewGuid().ToString()
                             }
                 };
         ViewBag.cosaDinamica = "Bienvenidos";
