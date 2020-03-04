@@ -38,3 +38,5 @@ d:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Objeto
 d:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Razor\Views\Alumno\Index.g.cshtml.cs
 d:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Razor\Views\Alumno\MultiAlumno.g.cshtml.cs
 d:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\ListaObjetoEscuela.g.cshtml.cs
+d:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Razor\Views\Evaluacion\Index.g.cshtml.cs
+d:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Razor\Views\Evaluacion\MultiEvaluacion.g.cshtml.cs

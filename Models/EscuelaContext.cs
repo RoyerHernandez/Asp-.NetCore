@@ -43,8 +43,10 @@ namespace Asp_.NetCore.Models
             //X cada curso cargar alumnos
 
             var alumnos = CargarAlumnos(cursos);
+            
             //Cargar evaluaciones
 
+                
             modelBuilder.Entity<Escuela>().HasData(escuela);
             modelBuilder.Entity<Curso>().HasData(cursos.ToArray());
             modelBuilder.Entity<Asignatura>().HasData(asignaturas.ToArray());
