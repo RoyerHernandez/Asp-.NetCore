@@ -43,14 +43,16 @@ namespace Asp_.NetCore.Models
             //X cada curso cargar alumnos
 
             var alumnos = CargarAlumnos(cursos);
-            
+
             //Cargar evaluaciones
 
-                
+            var evaluaciones = CargarEvaluaciones(cursos,alumnos);
+
             modelBuilder.Entity<Escuela>().HasData(escuela);
             modelBuilder.Entity<Curso>().HasData(cursos.ToArray());
             modelBuilder.Entity<Asignatura>().HasData(asignaturas.ToArray());
             modelBuilder.Entity<Alumno>().HasData(alumnos.ToArray());
+            modelBuilder.Entity<Evaluacion>().HasData(evaluaciones.ToArray());
         }
 
         private static List<Asignatura> CargarAsignaturas(List<Curso> cursos)
@@ -124,6 +126,51 @@ namespace Asp_.NetCore.Models
                 listAlumnos.AddRange(tmpList);
             }
             return listAlumnos;
+        }
+
+          private static List<Evaluacion> CargarEvaluaciones(List<Curso> cursos, List<Alumno> alumnos)
+        {
+            var listaCompleta = new List<Evaluacion>();
+            Random rdn = new Random();
+            foreach (var curso in cursos)
+            {
+                foreach(var alumno in alumnos){
+                var tmpList = new List<Evaluacion>{
+                    new Evaluacion(){
+                        Nombre = "Evaluacion Matematicas",
+                        //Alumno = alumno,
+                        Id = Guid.NewGuid().ToString()
+                    },
+                    new Evaluacion(){
+                        Nombre = "Evaluacion Ingles",
+                        //Alumno = alumno,
+                        Id = Guid.NewGuid().ToString()
+                    },
+                    new Evaluacion(){
+                        Nombre = "Evaluacion Fisica",
+                        //Alumno = alumno,
+                        Id = Guid.NewGuid().ToString()
+                    },
+                    new Evaluacion(){
+                        Nombre = "Evaluacion Quimica",
+                        //Alumno = alumno,
+                        Id = Guid.NewGuid().ToString()
+                    },
+                    new Evaluacion(){
+                        Nombre = "Evaluacion Matematicas",
+                        //Alumno = alumno,
+                        Id = Guid.NewGuid().ToString()
+                    },
+                    new Evaluacion(){
+                        Nombre = "Evaluacion Matematicas",
+                        //Alumno = alumno,
+                        Id = Guid.NewGuid().ToString()
+                    }
+                };
+                listaCompleta.AddRange(tmpList);
+                }
+            }
+            return listaCompleta;
         }
         private static List<Curso> CargarCursos(Escuela escuela)
         {
