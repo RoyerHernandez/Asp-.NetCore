@@ -11,7 +11,7 @@ public class AsignaturaController: Controller{
    /* public IActionResult Index(){  
             return View(_context.Asignaturas.FirstOrDefault());
     }*/
-    [Route("Asignatura/Index/{asignaturaId}")]
+    [Route("Asignatura/Index/{asignaturaId?}")]
     public IActionResult Index(string asignaturaId){ 
 
             if(!string.IsNullOrWhiteSpace(asignaturaId)){
