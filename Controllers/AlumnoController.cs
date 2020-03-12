@@ -8,9 +8,17 @@ using Microsoft.AspNetCore.Mvc;
 
 public class AlumnoController: Controller{
     
-    public IActionResult Index(){  
-    
-    return View(_context.Alumnos.FirstOrDefault());
+    public IActionResult Index(string Id){ 
+
+            if(!string.IsNullOrWhiteSpace(Id)){
+            var Alumno = from alumn in _context.Alumnos
+                                where  alumn.Id == Id
+                                select alumn;
+            return View(Alumno.SingleOrDefault());
+            }
+            else{
+            return View("MultiAlumno",_context.Alumnos);        
+            }
     }
     
     
