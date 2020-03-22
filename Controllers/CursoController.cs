@@ -64,7 +64,7 @@ public class CursoController : Controller
         return View(curso);
     }
 
-    [HttpPost]
+    [HttpPost, ActionName("Edit")]
      public IActionResult Edit(Curso curso, string Id)
     {
         ViewBag.fecha = DateTime.Now;
@@ -77,6 +77,31 @@ public class CursoController : Controller
         }else
         {
             return View(curso);
+        }
+    }
+
+    public IActionResult Delete(string Id)
+    {
+        Curso curso = _context.Cursos.Find(Id);
+        if(curso == null){
+            return View(curso);
+        }
+        return View(curso);
+    }
+
+    [HttpPost, ActionName("Delete")]
+     public IActionResult DeleteConfirmed(string Id)
+    {
+        ViewBag.fecha = DateTime.Now;
+        if(ModelState.IsValid){
+        var Curso = _context.Cursos.Find(Id);
+        _context.Cursos.Remove(Curso);
+        ViewBag.MensajeExtra = "Curso Actualizado";;
+        _context.SaveChanges();
+            return RedirectToAction("MultiCurso");
+        }else
+        {
+          return RedirectToAction("MultiCurso");
         }
     }
 

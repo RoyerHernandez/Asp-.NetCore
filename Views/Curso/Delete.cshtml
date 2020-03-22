@@ -1,7 +1,7 @@
 ﻿@model Curso
 
 @{
-    ViewData["Title"] = "Editar Curso";
+    ViewData["Title"] = "Eliminar Curso";
     Layout = "_Simple";
 }
 
@@ -9,18 +9,21 @@
 <div asp-validation-summary="All"></div>
     <Form method="POST">
         <div>
+            <label asp-for="Id"></label>
+            @Html.EditorFor(Curso => Curso.Id)
+        </div> 
+        <div>
             <label asp-for="Nombre"></label>
             @Html.EditorFor(Curso => Curso.Nombre)
         </div>   
         <div>
             <label asp-for="Dirección"></label>
             @Html.EditorFor(Curso => Curso.Dirección)
-        </div>    
+        </div> 
         <div>
             <label asp-for="Jornada"></label>
-            @Html.DropDownList("Jornada",Html.GetEnumSelectList<TiposJornada>(),"Seleccione una Jornada",
-                new{@class = "form-control"})
-        </div>   
-        <input type="submit" value="Editar"/>
+            @Html.EditorFor(Curso => Curso.Jornada)
+        </div>       
+        <input type="submit" value="Eliminar"/>
     </Form>
 <p><i>@ViewBag.fecha</i></p>

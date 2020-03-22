@@ -94,7 +94,7 @@ Write(ViewData["Title"]);
             WriteLiteral(" </p>\r\n\r\n<strong>Desde la vista normal</strong>\r\n");
             EndContext();
             BeginContext(278, 36, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c30ca340611447c2a96585aa1e7a1af6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "2dfe18e7fee9460d957b1f3cb50856a8", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

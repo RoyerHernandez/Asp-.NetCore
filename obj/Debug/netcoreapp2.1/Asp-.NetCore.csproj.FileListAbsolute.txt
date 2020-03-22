@@ -44,3 +44,4 @@ D:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Asp-.NetCore.dll
 D:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Asp-.NetCore.pdb
 D:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Asp-.NetCore.csproj.CopyComplete
 D:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Razor\Views\Curso\Edit.g.cshtml.cs
+d:\Platzi\Asp_NET\Asp-.NetCore\obj\Debug\netcoreapp2.1\Razor\Views\Curso\Delete.g.cshtml.cs

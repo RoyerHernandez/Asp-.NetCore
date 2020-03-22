@@ -3,3 +3,8 @@
 <p>Nombre : @Model.Nombre <br/>
    ID : @Model.Id <br/>
    Dirección : @Model.Dirección</p>
+   <td>
+            @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+            @Html.ActionLink("Index", "Index", new { id=Model.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=Model.Id })
+  </td>
