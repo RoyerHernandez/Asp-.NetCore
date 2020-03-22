@@ -6,6 +6,7 @@ namespace Asp_.NetCore.Models
     {
         public string Id { get; set; }
         public virtual string Nombre { get; set; }
+        public string Dirección { get; set; }
 
         public ObjetoEscuelaBase()
         {
@@ -14,7 +15,7 @@ namespace Asp_.NetCore.Models
 
         public override string ToString()
         {
-            return $"{Nombre},{Id}";
+            return $"{Nombre},{Id},{Dirección}";
         }
     }
 }

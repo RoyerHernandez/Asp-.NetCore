@@ -55,14 +55,23 @@ public class CursoController : Controller
         }
     }
 
-    public IActionResult Edit(Curso curso)
+    public IActionResult Edit(string Id)
+    {
+        Curso curso = _context.Cursos.Find(Id);
+        if(curso == null){
+            return View(curso);
+        }
+        return View(curso);
+    }
+
+    [HttpPost]
+     public IActionResult Edit(Curso curso, string Id)
     {
         ViewBag.fecha = DateTime.Now;
         if(ModelState.IsValid){
-        var Escuela = _context.Escuelas.FirstOrDefault();
-        curso.EscuelaId = Escuela.Id;
-        ViewBag.MensajeExtra = "Curso Creado";
-        _context.Cursos.Add(curso);
+        var Curso = _context.Cursos.Find(Id);
+        curso.Id = Curso.Id;
+        ViewBag.MensajeExtra = "Curso Actualizado";;
         _context.SaveChanges();
             return View("Index",curso);
         }else
