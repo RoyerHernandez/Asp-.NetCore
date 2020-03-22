@@ -9,7 +9,9 @@ namespace Asp_.NetCore.Models
         [Required(ErrorMessage="Se requiere el nombre del curso")]
         [StringLength(5)]
         public override string Nombre {get; set;}
+        [Required]
         public TiposJornada Jornada { get; set; }
+        [Required]
         public List<Asignatura> Asignaturas{ get; set; }
         public List<Alumno> Alumnos{ get; set; }
         [Display(Prompt="Dirección de Correspondencia")]
