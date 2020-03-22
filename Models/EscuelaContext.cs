@@ -179,27 +179,32 @@ namespace Asp_.NetCore.Models
             new Curso() {Id = Guid.NewGuid().ToString(),
                                           EscuelaId = escuela.Id,
                                           Nombre = "101",
-                                          Jornada = TiposJornada.Mañana
+                                          Jornada = TiposJornada.Mañana,
+                                          Dirección = "Calle falsa 123"
                                            },
             new Curso() {Id = Guid.NewGuid().ToString(),
                                           EscuelaId = escuela.Id,
                                           Nombre = "201",
-                                          Jornada = TiposJornada.Tarde
+                                          Jornada = TiposJornada.Tarde,
+                                          Dirección = "Calle falsa 123"
                                            },
             new Curso() {Id = Guid.NewGuid().ToString(),
                                           EscuelaId = escuela.Id,
                                           Nombre = "301",
-                                          Jornada = TiposJornada.Noche
+                                          Jornada = TiposJornada.Noche,
+                                          Dirección = "Calle falsa 123"
                                            },
             new Curso() {Id = Guid.NewGuid().ToString(),
                                           EscuelaId = escuela.Id,
                                           Nombre = "401",
-                                          Jornada = TiposJornada.Mañana
+                                          Jornada = TiposJornada.Mañana,
+                                          Dirección = "Calle falsa 123"
                                            },
             new Curso() {Id = Guid.NewGuid().ToString(),
                                           EscuelaId = escuela.Id,
                                           Nombre = "501",
-                                          Jornada = TiposJornada.Tarde
+                                          Jornada = TiposJornada.Tarde,
+                                          Dirección = "Calle falsa 123"
                                            },
                                            };
         }
