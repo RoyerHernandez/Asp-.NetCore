@@ -1,0 +1,7 @@
+-dotnet tool install -g dotnet-aspnet-codegenerator
+
+-dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Desing
+
+-dotnet restore
+
+-dotnet aspnet-codegenerator controller -name CursoController -m Curso -dc EscuelaContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries -f

@@ -2785,7 +2785,7 @@
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.SpaServices.Prerendering.PrerenderTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.SpaServices",
-        "Documentation": "\n            <summary>\n            A tag helper for prerendering JavaScript applications on the server.\n            </summary>\n        ",
+        "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": false,
         "TagMatchingRules": [
@@ -2814,7 +2814,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": "\n            <summary>\n            Specifies the path to the JavaScript module containing prerendering code.\n            </summary>\n        ",
+            "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "ModuleName"
@@ -2828,7 +2828,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": "\n            <summary>\n            If set, specifies the name of the CommonJS export that is the prerendering function to execute.\n            If not set, the JavaScript module's default CommonJS export must itself be the prerendering function.\n            </summary>\n        ",
+            "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "ExportName"
@@ -2842,7 +2842,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": "\n            <summary>\n            An optional JSON-serializable parameter to be supplied to the prerendering code.\n            </summary>\n        ",
+            "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "CustomDataParameter"
@@ -2856,7 +2856,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": "\n            <summary>\n            The maximum duration to wait for prerendering to complete.\n            </summary>\n        ",
+            "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "TimeoutMillisecondsParameter"
@@ -2875,6 +2875,217 @@
     "CSharpLanguageVersion": 703
   },
   "RootNamespace": "Asp-.NetCore",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Curso\\Delete.cshtml",
+      "TargetPath": "Views\\Curso\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Alumno\\Delete.cshtml",
+      "TargetPath": "Views\\Alumno\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Evaluacion\\Details.cshtml",
+      "TargetPath": "Views\\Evaluacion\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Curso\\Create.cshtml",
+      "TargetPath": "Views\\Curso\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Shared\\ListaObjetoEscuela.cshtml",
+      "TargetPath": "Views\\Shared\\ListaObjetoEscuela.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Curso\\MultiCurso.cshtml",
+      "TargetPath": "Views\\Curso\\MultiCurso.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Evaluacion\\Create.cshtml",
+      "TargetPath": "Views\\Evaluacion\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Asignatura\\Edit.cshtml",
+      "TargetPath": "Views\\Asignatura\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Escuela\\Index.cshtml",
+      "TargetPath": "Views\\Escuela\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Asignatura\\Index.cshtml",
+      "TargetPath": "Views\\Asignatura\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Home\\About.cshtml",
+      "TargetPath": "Views\\Home\\About.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Alumno\\Edit.cshtml",
+      "TargetPath": "Views\\Alumno\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Shared\\ObjetoEscuelaSimple.cshtml",
+      "TargetPath": "Views\\Shared\\ObjetoEscuelaSimple.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Shared\\_CookieConsentPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Evaluacion\\Edit.cshtml",
+      "TargetPath": "Views\\Evaluacion\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Alumno\\Index.cshtml",
+      "TargetPath": "Views\\Alumno\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Alumno\\MultiAlumno.cshtml",
+      "TargetPath": "Views\\Alumno\\MultiAlumno.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Escuela\\Create.cshtml",
+      "TargetPath": "Views\\Escuela\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Home\\Contact.cshtml",
+      "TargetPath": "Views\\Home\\Contact.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Asignatura\\MultiAsignatura.cshtml",
+      "TargetPath": "Views\\Asignatura\\MultiAsignatura.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Asignatura\\Delete.cshtml",
+      "TargetPath": "Views\\Asignatura\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Curso\\Edit.cshtml",
+      "TargetPath": "Views\\Curso\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Alumno\\Details.cshtml",
+      "TargetPath": "Views\\Alumno\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Escuela\\Edit.cshtml",
+      "TargetPath": "Views\\Escuela\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Asignatura\\Details.cshtml",
+      "TargetPath": "Views\\Asignatura\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Evaluacion\\MultiEvaluacion.cshtml",
+      "TargetPath": "Views\\Evaluacion\\MultiEvaluacion.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Escuela\\Delete.cshtml",
+      "TargetPath": "Views\\Escuela\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Asignatura\\Create.cshtml",
+      "TargetPath": "Views\\Asignatura\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Curso\\Details.cshtml",
+      "TargetPath": "Views\\Curso\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Escuela\\Details.cshtml",
+      "TargetPath": "Views\\Escuela\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Evaluacion\\Index.cshtml",
+      "TargetPath": "Views\\Evaluacion\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Evaluacion\\Delete.cshtml",
+      "TargetPath": "Views\\Evaluacion\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Shared\\_Simple.cshtml",
+      "TargetPath": "Views\\Shared\\_Simple.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Curso\\Index.cshtml",
+      "TargetPath": "Views\\Curso\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Platzi\\Asp_NET\\Asp-.NetCore\\Views\\Alumno\\Create.cshtml",
+      "TargetPath": "Views\\Alumno\\Create.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }
