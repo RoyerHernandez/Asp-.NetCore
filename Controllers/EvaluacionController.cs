@@ -48,8 +48,8 @@ namespace Asp_.NetCore.Controllers
         // GET: Evaluacion/Create
         public IActionResult Create()
         {
-            ViewData["AlumnoId"] = new SelectList(_context.Alumnos, "Id", "Id");
-            ViewData["AsignaturaId"] = new SelectList(_context.Asignaturas, "Id", "Id");
+            ViewData["AlumnoId"] = new SelectList(_context.Alumnos, "Id", "Nombre");
+            ViewData["AsignaturaId"] = new SelectList(_context.Asignaturas, "Id", "Nombre");
             return View();
         }
 
@@ -60,14 +60,14 @@ namespace Asp_.NetCore.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("AlumnoId,AsignaturaId,Nota,Id,Nombre,Dirección")] Evaluacion evaluacion)
         {
-            if (ModelState.IsValid)
-            {
+            //if (ModelState.IsValid)
+            //{
                 _context.Add(evaluacion);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
-            ViewData["AlumnoId"] = new SelectList(_context.Alumnos, "Id", "Id", evaluacion.AlumnoId);
-            ViewData["AsignaturaId"] = new SelectList(_context.Asignaturas, "Id", "Id", evaluacion.AsignaturaId);
+            //}
+            ViewData["AlumnoId"] = new SelectList(_context.Alumnos, "Id", "Nombre", evaluacion.AlumnoId);
+            ViewData["AsignaturaId"] = new SelectList(_context.Asignaturas, "Id", "Nombre", evaluacion.AsignaturaId);
             return View(evaluacion);
         }
 
@@ -84,8 +84,8 @@ namespace Asp_.NetCore.Controllers
             {
                 return NotFound();
             }
-            ViewData["AlumnoId"] = new SelectList(_context.Alumnos, "Id", "Id", evaluacion.AlumnoId);
-            ViewData["AsignaturaId"] = new SelectList(_context.Asignaturas, "Id", "Id", evaluacion.AsignaturaId);
+            ViewData["AlumnoId"] = new SelectList(_context.Alumnos, "Id", "Nombre", evaluacion.AlumnoId);
+            ViewData["AsignaturaId"] = new SelectList(_context.Asignaturas, "Id", "Nombre", evaluacion.AsignaturaId);
             return View(evaluacion);
         }
 
@@ -101,8 +101,8 @@ namespace Asp_.NetCore.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
+           // if (ModelState.IsValid)
+            //{
                 try
                 {
                     _context.Update(evaluacion);
@@ -120,9 +120,9 @@ namespace Asp_.NetCore.Controllers
                     }
                 }
                 return RedirectToAction(nameof(Index));
-            }
-            ViewData["AlumnoId"] = new SelectList(_context.Alumnos, "Id", "Id", evaluacion.AlumnoId);
-            ViewData["AsignaturaId"] = new SelectList(_context.Asignaturas, "Id", "Id", evaluacion.AsignaturaId);
+            //}
+            ViewData["AlumnoId"] = new SelectList(_context.Alumnos, "Id", "Nombre", evaluacion.AlumnoId);
+            ViewData["AsignaturaId"] = new SelectList(_context.Asignaturas, "Id", "Nombre", evaluacion.AsignaturaId);
             return View(evaluacion);
         }
 

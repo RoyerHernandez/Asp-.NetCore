@@ -47,7 +47,7 @@ namespace Asp_.NetCore.Controllers
         // GET: Alumno/Create
         public IActionResult Create()
         {
-            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Id");
+            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Nombre");
             return View();
         }
 
@@ -81,7 +81,7 @@ namespace Asp_.NetCore.Controllers
             {
                 return NotFound();
             }
-            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Id", alumno.CursoId);
+            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Nombre", alumno.CursoId);
             return View(alumno);
         }
 
@@ -97,8 +97,8 @@ namespace Asp_.NetCore.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
+           /* if (ModelState.IsValid)
+            {*/
                 try
                 {
                     _context.Update(alumno);
@@ -116,8 +116,8 @@ namespace Asp_.NetCore.Controllers
                     }
                 }
                 return RedirectToAction(nameof(Index));
-            }
-            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Id", alumno.CursoId);
+           /* }*/
+            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Nombre", alumno.CursoId);
             return View(alumno);
         }
 

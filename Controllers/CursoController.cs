@@ -47,7 +47,7 @@ namespace Asp_.NetCore.Controllers
         // GET: Curso/Create
         public IActionResult Create()
         {
-            ViewData["EscuelaId"] = new SelectList(_context.Escuelas, "Id", "Id");
+            ViewData["EscuelaId"] = new SelectList(_context.Escuelas, "Id", "Nombre");
             return View();
         }
 
@@ -64,7 +64,7 @@ namespace Asp_.NetCore.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["EscuelaId"] = new SelectList(_context.Escuelas, "Id", "Id", curso.EscuelaId);
+            ViewData["EscuelaId"] = new SelectList(_context.Escuelas, "Id", "Nombre", curso.EscuelaId);
             return View(curso);
         }
 
@@ -81,7 +81,7 @@ namespace Asp_.NetCore.Controllers
             {
                 return NotFound();
             }
-            ViewData["EscuelaId"] = new SelectList(_context.Escuelas, "Id", "Id", curso.EscuelaId);
+            ViewData["EscuelaId"] = new SelectList(_context.Escuelas, "Id", "Nombre", curso.EscuelaId);
             return View(curso);
         }
 
@@ -97,8 +97,8 @@ namespace Asp_.NetCore.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
+            /*if (ModelState.IsValid)
+            {*/
                 try
                 {
                     _context.Update(curso);
@@ -116,8 +116,8 @@ namespace Asp_.NetCore.Controllers
                     }
                 }
                 return RedirectToAction(nameof(Index));
-            }
-            ViewData["EscuelaId"] = new SelectList(_context.Escuelas, "Id", "Id", curso.EscuelaId);
+            //}
+            ViewData["EscuelaId"] = new SelectList(_context.Escuelas, "Id", "Nombre", curso.EscuelaId);
             return View(curso);
         }
 

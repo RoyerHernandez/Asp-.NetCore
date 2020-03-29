@@ -47,7 +47,7 @@ namespace Asp_.NetCore.Controllers
         // GET: Asignatura/Create
         public IActionResult Create()
         {
-            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Id");
+            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Nombre");
             return View();
         }
 
@@ -58,13 +58,13 @@ namespace Asp_.NetCore.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("CursoId,Id,Nombre,Dirección")] Asignatura asignatura)
         {
-            if (ModelState.IsValid)
-            {
+            //if (ModelState.IsValid)
+            //{
                 _context.Add(asignatura);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
-            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Id", asignatura.CursoId);
+            //}
+            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Nombre", asignatura.CursoId);
             return View(asignatura);
         }
 
@@ -81,7 +81,7 @@ namespace Asp_.NetCore.Controllers
             {
                 return NotFound();
             }
-            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Id", asignatura.CursoId);
+            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Nombre", asignatura.CursoId);
             return View(asignatura);
         }
 
@@ -97,8 +97,8 @@ namespace Asp_.NetCore.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
+            /*if (ModelState.IsValid)
+            {*/
                 try
                 {
                     _context.Update(asignatura);
@@ -116,8 +116,8 @@ namespace Asp_.NetCore.Controllers
                     }
                 }
                 return RedirectToAction(nameof(Index));
-            }
-            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Id", asignatura.CursoId);
+            /*}*/
+            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Nombre", asignatura.CursoId);
             return View(asignatura);
         }
 
