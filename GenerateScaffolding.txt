@@ -5,3 +5,8 @@
 -dotnet restore
 
 -dotnet aspnet-codegenerator controller -name CursoController -m Curso -dc EscuelaContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries -f
+
+
+More curses
+
+https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-3.1
